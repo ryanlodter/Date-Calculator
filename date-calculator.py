@@ -2,7 +2,7 @@
 months = {1: 31, 2: 28, 3: 31, 4: 30, 5: 31, 6: 30, 7: 31, 8: 31, 9: 30, 10: 31, 11: 30, 12: 31}
 
 #get start date
-date = input("Enter start date (m-d-year: )")
+date = input("Enter start date (m-d-year): ")
 
 dash_index = date.index('-')
 month_start = int(date[:dash_index])
@@ -15,7 +15,7 @@ date = date[dash_index + 1:]
 year_start = int(date)
 
 #get end date
-date = input("Enter end date (m-d-year: )")
+date = input("Enter end date (m-d-year): ")
 
 dash_index = date.index('-')
 month_end = int(date[:dash_index])
@@ -60,4 +60,4 @@ difference = difference - day_start
 difference = difference - (months[month_end] - day_end)
 
 #print the total difference in days
-print(difference + "days")
+print(str(difference) + " days")
